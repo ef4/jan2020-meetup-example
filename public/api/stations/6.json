@@ -1,1 +1,1 @@
-{"id":6,"name":"Government Center","lines":["Green"],"neighbors":[{"id":5,"name":"Haymarket"},{"id":2,"name":"Park Street"}]}
+{"id":"6","name":"Government Center","lines":["Green"],"neighbors":[{"id":5,"name":"Haymarket"},{"id":2,"name":"Park Street"}]}

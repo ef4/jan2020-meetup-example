@@ -56,7 +56,7 @@ addLine(orangeLine, 'Orange');
 
 for (let station of stations.values()) {
   outputJSONSync(join(__dirname, `../public/api/stations/${station.id}.json`), {
-    id: station.id,
+    id: String(station.id),
     name: station.name,
     lines: [...station.lines],
     neighbors: [...station.neighbors].map(neighbor => ({

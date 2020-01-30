@@ -1,1 +1,1 @@
-{"id":1,"name":"Charles/MGH","lines":["Red"],"neighbors":[{"id":0,"name":"Kendall/MIT"},{"id":2,"name":"Park Street"}]}
+{"id":"1","name":"Charles/MGH","lines":["Red"],"neighbors":[{"id":0,"name":"Kendall/MIT"},{"id":2,"name":"Park Street"}]}

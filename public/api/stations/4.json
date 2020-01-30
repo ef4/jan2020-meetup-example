@@ -1,1 +1,1 @@
-{"id":4,"name":"South Station","lines":["Red"],"neighbors":[{"id":3,"name":"Downtown Crossing"}]}
+{"id":"4","name":"South Station","lines":["Red"],"neighbors":[{"id":3,"name":"Downtown Crossing"}]}

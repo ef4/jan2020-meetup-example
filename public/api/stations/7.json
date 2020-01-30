@@ -1,1 +1,1 @@
-{"id":7,"name":"Boylston","lines":["Green"],"neighbors":[{"id":2,"name":"Park Street"},{"id":8,"name":"Arlington"}]}
+{"id":"7","name":"Boylston","lines":["Green"],"neighbors":[{"id":2,"name":"Park Street"},{"id":8,"name":"Arlington"}]}
