@@ -1,43 +1,27 @@
 import { tracked } from '@glimmer/tracking';
 
 
-export class RemoteData {
-  @tracked _state;
+class RemoteData {
+  @tracked state;
 
-  constructor(urlCallback) {
-    this.urlCallback = urlCallback;
+  constructor(url) {
+    this.run(url);
   }
 
-  async run() {
-    let url = this._url;
+  async run(url) {
+    this.state = {
+      isLoading: true,
+      response: undefined,
+    }
     let response = await fetch(url);
     let json = await response.json();
-    if (this._url !== url) {
-      // somebody else superceded our request
-      return;
-    }
-    this._state = {
+    this.state = {
       isLoading: false,
       response: json,
     };
   }
-
-  get state() {
-    let url = this.urlCallback();
-    if (this._url !== url) {
-      this._url = url;
-      this._state = {
-        isLoading: true,
-        response: undefined,
-      }
-      this.run();
-    }
-    return this._state;
-  }
 }
 
-function resource(Class) {
-  return (...args) => [Class, ...args];
+export function remoteData(url) {
+  return [RemoteData, url];
 }
-
-export const remoteData = resource(RemoteData);
