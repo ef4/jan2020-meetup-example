@@ -1,0 +1,17 @@
+<div class="station">
+  <div class="main">
+    <h1>{{@station.name}}</h1>
+    <div class="lines">
+      {{#each @station.lines as |line|}}
+        <div class="line-{{line}}">{{line}}</div>
+      {{/each}}
+    </div>
+  </div>
+  <div class="neighbors">
+    <h2>Neighboring Stations</h2>
+
+    {{#each @station.neighbors as |neighbor|}}
+      <LinkTo @route={{@linkToRoute}} @model={{neighbor.id}}>{{neighbor.name}}</LinkTo>
+    {{/each}}
+  </div>
+</div>

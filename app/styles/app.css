@@ -1,0 +1,50 @@
+body {
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.station {
+  display: flex;
+  justify-content: center;
+}
+
+.station > .main {
+  min-width: 25rem;
+  padding: 0 1.5rem;
+}
+
+.neighbors {
+  padding-top: 0.5rem;
+}
+
+.neighbors > a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.5rem;
+}
+
+.neighbors > a:hover {
+  text-decoration: underline;
+}
+
+
+.lines {
+  display: flex;
+}
+
+.lines > div {
+  padding: 1rem;
+  color: white;
+}
+
+.line-Red {
+  background-color: #da291c;
+}
+
+.line-Orange {
+  background-color: #ed8b00;
+}
+
+.line-Green {
+  background-color: #00843d;
+}
