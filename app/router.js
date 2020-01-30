@@ -11,5 +11,5 @@ Router.map(function() {
   this.route('use-router', { path: '/use-router/:id' });
   this.route('declarative-example', { path: '/declarative-example/:id' });
   this.route('octane-example', { path: '/octane-example/:id' });
-
+  this.route('use-decorator-example', { path: '/use-decorator-example/:id' });
 });
